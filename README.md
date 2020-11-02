@@ -5,9 +5,13 @@ Home: http://computing.llnl.gov/projects/floating-point-compression
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/zfp-feedstock/blob/master/LICENSE.txt)
 
 Summary: Compressed numerical arrays that support high-speed random access
+
+Development: https://github.com/LLNL/zfp
+
+Documentation: https://zfp.readthedocs.io
 
 zfp is a compressed format for representing multidimensional
 floating-point and integer arrays. zfp provides compressed-array
