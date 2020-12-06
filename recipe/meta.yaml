@@ -8,7 +8,7 @@ package:
   version: {{ version }}
 
 source:
-  url: http://computing.llnl.gov/projects/floating-point-compression/download/zfp-{{ version }}.tar.gz
+  url: https://github.com/LLNL/zfp/releases/download/{{ version }}/zfp-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
