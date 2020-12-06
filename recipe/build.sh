@@ -22,7 +22,7 @@ elif [[ ${CXXFLAGS} == *"-std="* ]]; then
     exit 1
 fi
 
-cmake \
+cmake ${CMAKE_ARGS} \
     -DCMAKE_BUILD_TYPE=Release                \
     -DBUILD_SHARED_LIBS=ON                    \
     -DCMAKE_CXX_STANDARD=${CXX_STANDARD}      \
