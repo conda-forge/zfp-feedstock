@@ -33,5 +33,7 @@ cmake ${CMAKE_ARGS} \
     ${SRC_DIR}
 
 make ${VERBOSE_CM} -j${CPU_COUNT}
-CTEST_OUTPUT_ON_FAILURE=1 make ${VERBOSE_CM} test
+if [[ "$CONDA_BUILD_CROSS_COMPILATION" != 1 ]]; then
+  CTEST_OUTPUT_ON_FAILURE=1 make ${VERBOSE_CM} test
+fi
 make install
